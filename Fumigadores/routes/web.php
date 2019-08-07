@@ -38,3 +38,7 @@ Route::get('/olvidePass', function () {
 Route::get('/passRecuperada', function () {
     return view('passRecuperada');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
